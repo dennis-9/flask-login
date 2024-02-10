@@ -1,1 +1,2 @@
-This is the change
+gunicorn==21.2.0
+packaging==23.2
