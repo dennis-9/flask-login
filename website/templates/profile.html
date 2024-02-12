@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>User Profile</h2>
+    <p>Email: {{ user.email}}</p>
+    <p>Username: {{ user.first_name }}</p>
+
+<!--form for uploading profile picture -->
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('views.upload_picture') }}">
+        <label for="profile_picture">Upload Profile Picture</label>
+        <input type="file" name="profile_picture" accept="image/*">
+        <button type="submit">Upload</button>
+    </form>
+
+    <!--Display profile picture if available-->
+    {% if profile_picture %}
+        <img src="{{ url_for('static', filename='profile_pictures/' + user.profile_picture) }}" alt="Profile Picture"/>
+    {% else %}
+        <i>No profile picture uploaded.</i><br/>
+    {% endif %}
+</div>
+
+{% endblock%}

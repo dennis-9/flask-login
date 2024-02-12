@@ -2,7 +2,10 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager
+from flask_migrate import Migrate
+
 db = SQLAlchemy()
+
 #creating a variable for the db
 DB_NAME = "database.db"
 
@@ -13,7 +16,9 @@ def create_app():
     # So my sqlite database is stored here
     app. config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     #initialize the database by giving it a flask app
-    db.init_app(app)    
+    
+    db.init_app(app)
+
     
     #registering the blueprints here
     #telling flask that we have some blueprints that contain differnt views

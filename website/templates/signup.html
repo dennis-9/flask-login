@@ -1,8 +1,34 @@
 {% extends "base.html" %} {% block title%}SignUp{% endblock %} {% block content
 %}
+
+<style>
+  #background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+label {
+  font-weight: bold;
+  color: white;
+}
+
+
+
+</style>
+
+
+<video id="background-video" autoplay loop muted playsinline>
+  <source src="/static/fl.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 <form method="POST">
   <!--when forms is submited send a post request to the backend-->
-  <h3 align="center">SignUp</h3>
+  <h3 align="center" style="color: white">SignUp</h3>
   <div class="form-group">
     <label for="email">Email Address</label>
     <input
@@ -16,13 +42,13 @@
   <br />
 
   <div class="form-group">
-    <label for="firstname">First Name</label>
+    <label for="firstname">Userame</label>
     <input
       type="text"
       class="form-control"
       id="firstname"
       name="firstName"
-      placeholder="Enter First name"
+      placeholder="Enter Username"
     />
   </div>
   <br />
@@ -50,5 +76,7 @@
   </div>
   <br />
   <button type="submit" class="btn btn-primary">Submit</button>
+
 </form>
+
 {% endblock %}
