@@ -57,7 +57,7 @@ This project is a web-based platform that allows users to access programming cou
 1. Clone the repository.
 2. Create a virtual environment and activate it.
 3. Install dependencies using pip install -r requirements.txt.
-4. Run the application with python run.py.
+4. Run the application with python main.py.
 
 >[!NOTE]
 > The application will be accessible at http://localhost:5000/.
