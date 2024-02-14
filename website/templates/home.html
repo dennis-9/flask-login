@@ -4,84 +4,11 @@
 
 {% block content %}
     <!-- External Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
 
     <!-- Internal Styles -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #fff;
-        }
-
-        #background-video {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;
-        }
-
-        header {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            text-align: center;
-            color: white;
-            backdrop-filter: blur(10px); 
-        }
         
-
-        .course-card {
-            width: 300px;
-            margin: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .course-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .course-details {
-            padding: 15px;
-        }
-
-       
-
-        h2 {
-            margin-top: 0;
-            font-size: 1.5em;
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-
-        .course-info {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-        }
-
-        .button {
-            padding: 8px 12px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #555;
-        }
     </style>
 
     <!-- Header -->
@@ -103,17 +30,17 @@
                 <img src="/static/javascript.png" class="card-img-top" alt="Javascript logo">
                 <div class="course-card">
                     <div class="course-details">
-                        <h2>Enjoy Introduction to Javascript With Bro Code.</h2>
+                        <h2>Introduction to JavaScript With Bro Code</h2>
                         <p>Javascript programming. Covering syntax, data structures, and more. Enjoy with Bro Code. Full Course for free.</p>
                         <div class="course-info">
                             <span>Duration: 12 hours</span>
-                            <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&pp=ygUWamF2YXNjcmlwdCBmdWxsIGNvdXJzZQ%3D%3D"
-                                class="button" target="_blank">Enroll Now!</a>
+                            <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&pp=ygUWamF2YXNjcmlwdCBmdWxsIGNvdXJzZQ%3D%3D&loop=1" class="button" target="_blank">Enroll Now!</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
 
         
 
@@ -136,14 +63,14 @@
 
         <div class="col">
             <div class="card">
-                <img src="/static/creativity flyer zeal-1.jpg" class="card-img-top" alt="...">
+                <img src="/static/mysql.jpg" class="card-img-top" alt="...">
                 <div class="course-card">
                     <div class="course-details">
-                        <h2>Introduction to Python</h2>
-                        <p>Python programming. Covering syntax, data structures, and more. Full Course</p>
+                        <h2>MYSQL Tutorial for Beginners</h2>
+                        <p>My SQL. A very good databased Course With Freecode camp. Full Course</p>
                         <div class="course-info">
-                            <span>Duration: 6 hours</span>
-                            <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc&t=3s&pp=ygUsTGVhcm4gdGhlIGZ1bmRhbWVudGFscyBvZiBQeXRob24gcHJvZ3JhbW1pbmc%3D"
+                            <span>Duration: 4 hours</span>
+                            <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY&pp=ygUFbXlzcWw%3D"
                                 class="button" target="_blank">Enroll Now!</a>
                         </div>
                     </div>
@@ -155,23 +82,20 @@
 
         <div class="col">
             <div class="card">
-                <img src="/static/creativity flyer zeal-1.jpg" class="card-img-top" alt="...">
+                <img src="/static/flask-python.png" class="card-img-top" alt="Flask icon">
                 <div class="course-card">
                     <div class="course-details">
-                        <h2>Introduction to Python</h2>
-                        <p>Python programming. Covering syntax, data structures, and more. Full Course</p>
+                        <h2>Introduction to Flask Course. Python Web Application Development </h2>
+                        <p>Learn Python programming With Flask Framework. Coding some Projects, and more. Full Course</p>
                         <div class="course-info">
                             <span>Duration: 6 hours</span>
-                            <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc&t=3s&pp=ygUsTGVhcm4gdGhlIGZ1bmRhbWVudGFscyBvZiBQeXRob24gcHJvZ3JhbW1pbmc%3D"
+                            <a href="https://www.youtube.com/watch?v=Qr4QMBUPxWo&t=67s&pp=ygURZmxhc2sgZnVsbCBjb3Vyc2U%3D"
                                 class="button" target="_blank">Enroll Now!</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Repeat the above course card structure for other courses -->
-        <!-- ... -->
 
     </div>
 

@@ -1,0 +1,47 @@
+h2 {
+    text-align: center;
+}
+
+#profile-picture-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#profile-picture {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #007BFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+}
+
+#upload-form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    cursor: pointer;
+    color: #007BFF;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.btn-upload {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
